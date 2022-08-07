@@ -1,0 +1,97 @@
+/* delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* use only the available space inside the 400x400 frame*/
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: linear-gradient(-135deg ,#febe58, #de2bae);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#hamburger-check{
+display: none;
+}
+
+.menu{
+	margin: 0 0 0 -20px;
+	background: #000000;
+}
+
+.hamburger{
+display:block;
+position: absolute;
+background: #FFFFFF;
+width: 60px;
+height: 7px;
+border-radius: 5px;
+transition: 0.5s ease-in-out;
+	
+}
+
+.hamburger:before, .hamburger:after{
+display:block;
+position: absolute;
+background: #FFFFFF;
+width: 40px;
+height: 7px;
+border-radius: 5px;
+transition: 0.5s ease-in-out;
+}
+
+.hamburger:before{
+	content: '';
+	margin: -13px 0 0 10px;
+}
+
+.hamburger:after{
+	content: '';
+	margin: 13px 0 0 10px;
+}
+
+.menu:hover .hamburger:after{
+	margin-left: 0px;
+	width: 60px;
+}
+
+.menu:hover .hamburger:before{
+	margin-left: 0px;
+	width: 60px;
+}
+
+.open .hamburger{
+	background-color: transparent;
+	transform: rotate(180deg);
+}
+    
+.open .hamburger:before{
+	margin: 0 0 0 0;
+	transform: rotate(45deg);
+	width: 60px;
+}
+    
+.open .hamburger:after{
+	margin: 0 0 0 0;
+	transform: rotate(-45deg);
+	width: 60px;
+}
